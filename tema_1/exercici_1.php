@@ -25,11 +25,11 @@
  }
  // llamamos a la instancia y la imprimimos
  $tigger = Tigger::getInstance();
- $tigger->roar();
- $tigger->roar();
- $tigger->roar();
- $tigger->roar();
- $tigger->roar();
+ $num = readline("Cuantas veces quieres haga el rugido: ");
+
+    for( $i = 0; $i < $num; $i++){
+        $tigger->roar();
+    }
 
  // contamos cuantas veces se ha impreso
  echo $tigger->getCount(). " veces\n";
